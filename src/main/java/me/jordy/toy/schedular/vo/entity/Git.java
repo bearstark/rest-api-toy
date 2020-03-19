@@ -21,5 +21,5 @@ public class Git {
     String url;
 
     @ManyToOne(optional = true)
-    private Schedule schedule;
+    private ScheduleHistory scheduleHistory;
 }

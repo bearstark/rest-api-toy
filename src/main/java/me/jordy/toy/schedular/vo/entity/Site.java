@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 @Entity @Getter @Setter @EqualsAndHashCode(of = "seq")
 @Builder @NoArgsConstructor @AllArgsConstructor
 @ToString
-public class Blog {
+public class Site {
 
     @Id
     @GeneratedValue
@@ -21,6 +21,8 @@ public class Blog {
 
     String url;
 
+    String elements;
+
     @ManyToOne(optional = true)
-    private Schedule schedule;
+    private ScheduleHistory scheduleHistory;
 }
